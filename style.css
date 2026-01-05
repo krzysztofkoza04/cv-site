@@ -76,9 +76,14 @@ a:hover { text-decoration: underline; }
 
 .page {
   max-width: 980px;
-  margin: 22px auto 32px;
+  margin: 28px auto 40px;
   padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* 🔥 TO JEST KLUCZ */
 }
+
 
 .card {
   background: var(--card);
