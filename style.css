@@ -84,6 +84,22 @@ a:hover { text-decoration: underline; }
   gap: 24px; /* 🔥 TO JEST KLUCZ */
 }
 
+.project-columns {
+  display: grid;
+  gap: 20px;
+}
+
+.project-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 860px) {
+  .project-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .card {
   background: var(--card);
@@ -113,6 +129,32 @@ a:hover { text-decoration: underline; }
   .grid { grid-template-columns: 1fr 1fr; }
 }
 
+.skill-grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 860px) {
+  .skill-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.skill-grid h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.skill-grid .tags {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-grid .tags li {
+  margin-bottom: 6px;
+  color: var(--text);
+  font-size: 15px;
+}
+
 .tags {
   list-style: none;
   padding: 0;
@@ -120,6 +162,18 @@ a:hover { text-decoration: underline; }
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.tags.list-vertical {
+  display: block;
+  gap: 0;
+  margin-left: 0;
+}
+
+.tags.list-vertical li {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 6px;
 }
 
 .tags li {

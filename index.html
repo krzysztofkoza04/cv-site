@@ -14,9 +14,6 @@
       <nav class="nav">
         <a class="nav-link active" href="index.html">Strona główna</a>
         <a class="nav-link" href="projects.html">Projekty</a>
-        <a class="nav-link disabled" href="#" aria-disabled="true" title="Wkrótce">
-          Kontakt (wkrótce)
-        </a>
       </nav>
     </div>
   </header>
@@ -25,19 +22,25 @@
     <!-- HERO: zostaje jako kafelek, ale tylko 1 akapit + ładniejsze przyciski -->
     <section class="card hero">
       <div>
-        <h1>Inżynieria danych • Analityka danych • Data Science</h1>
+        <h1>Pasja do danych i technologii mieści się w każdym wierszu i wykresie</h1>
         <p class="muted">
-          Student inżynierii analizy danych (3 rok) • Politechnika Rzeszowska • studia dzienne
+          Jestem gotowy łączyć analityczne patrzenie z praktyką IT: eksploruję dane branżowe, opracowuję modele i tworzę rzetelne raporty.
         </p>
 
         <p class="summary">
-          Pasjonuję się inżynierią danych, analityką danych i data science — od pozyskania i porządkowania danych,
-          przez analizę statystyczną i szeregi czasowe, po wizualizację wyników (m.in. Power BI).
+          Uwielbiam uczyć się nowych narzędzi: Python, SQL, Power BI, R i chmura to mój warsztat. Potrafię przekształcać dane w wartościowe insighty,
+          a przy tym zachować dbałość o proces ETL, jakość danych i zrozumiałość analiz. Z chęcią podejmuję wyzwania i rozwijam się codziennie
+          zarówno w projektach zespołowych, jak i indywidualnych.
+        </p>
+
+        <p class="summary">
+          Po pracy trenuję na siłowni, biegam dla kondycji i czytam literaturę, co pomaga mi utrzymywać systematyczność i świeże spojrzenie.
         </p>
 
         <div class="cta">
           <a class="btn" href="projects.html">Zobacz projekty</a>
-          <a class="btn secondary" href="#contact">Napisz do mnie</a>
+          <a class="btn secondary" href="#contact">Zapraszam do kontaktu</a>
+          <a class="btn" href="assets/Krzysztof Koza cv (1).pdf" target="_blank">Pobierz CV</a>
         </div>
       </div>
     </section>
@@ -49,51 +52,64 @@
       <div class="contact-grid">
         <div>
           <span class="label">Email</span>
-          <a href="mailto:email@domena.pl">krzysztof.koza04@gmail.com</a>
+          <a href="mailto:krzysztof.koza04@gmail.com">krzysztof.koza04@gmail.com</a>
         </div>
 
         <div>
           <span class="label">Telefon</span>
-          <a href="tel:+48123456789">+48 505 013 012</a>
+          <a href="tel:+48505013012">+48 505 013 012</a>
         </div>
 
         <div>
           <span class="label">GitHub</span>
-          <a href="https://github.com/twoj-login" target="_blank" rel="noreferrer">https://github.com/krzysztofkoza04</a>
+          <button class="pill" onclick="window.open('https://github.com/krzysztofkoza04', '_blank')">GitHub</button>
         </div>
 
         <div>
           <span class="label">LinkedIn</span>
-          <a href="https://linkedin.com/in/twoj-profil" target="_blank" rel="noreferrer">
-            https://www.linkedin.com/in/krzysztof-koza-607a46303/
-          </a>
+          <button class="pill" onclick="window.open('https://www.linkedin.com/in/krzysztof-koza-607a46303/', '_blank')">LinkedIn</button>
         </div>
 
         <div>
           <span class="label">LeetCode</span>
-          <a href="https://leetcode.com/twoj-login" target="_blank" rel="noreferrer">
-            https://leetcode.com/u/krzysztof04-koza/
-          </a>
+          <button class="pill" onclick="window.open('https://leetcode.com/u/krzysztof04-koza/', '_blank')">LeetCode</button>
         </div>
       </div>
     </section>
 
-    <!-- UMIEJĘTNOŚCI: osobny, długi kafelek jak Kontakt -->
     <section class="card">
       <h2>Umiejętności</h2>
-      <ul class="tags">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git</li>
-        <li>Python (NumPy, pandas)</li>
-        <li>Excel</li>
-        <li>Power BI</li>
-        <li>R</li>
-        <li>Statystyka</li>
-        <li>Matematyka</li>
-        <li>SQL</li>
-        <li>Linux</li>
-      </ul>
+      <div class="skill-grid">
+        <div>
+          <h3>Programowanie</h3>
+          <ul class="tags">
+            <li>Python (NumPy, pandas, SQLAlchemy)</li>
+            <li>R (dplyr, ggplot2, ts)</li>
+            <li>SQL (Oracle, PostgreSQL, MySQL)</li>
+            <li>Shell / Linux</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Analiza i raportowanie</h3>
+          <ul class="tags">
+            <li>Power BI (dashboardy, DAX)</li>
+            <li>Excel (tabele przestawne, makra)</li>
+            <li>Statystyka i modele predykcyjne</li>
+            <li>Szeregi czasowe, wykresy i KPI</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Inżynieria danych</h3>
+          <ul class="tags">
+            <li>ETL, przetwarzanie wsadowe i automatyzacja</li>
+            <li>Modelowanie relacyjne (huty, schemat gwiazdy)</li>
+            <li>Oracle APEX, PL/SQL, architektura hurtowni</li>
+            <li>Git i kontrola wersji</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- EDUKACJA: osobny, długi kafelek jak Kontakt -->
@@ -107,6 +123,15 @@
         <h3>Liceum</h3>
         <p class="muted">Liceum Ogolnokształcące im Tadeusza Kościuszki w Ropczycach • kierunek Matematyka-Fizyka-informatyka</p>
       </div>
+    </section>
+
+    <section class="card">
+      <h2>Kursy i ćwiczenia</h2>
+      <ul class="tags list-vertical">
+        <li>The Complete SQL Bootcamp: Go from Zero to Hero (Udemy)</li>
+        <li>Data Analysis with Pandas and Python (Udemy)</li>
+        <li>Microsoft Power BI Desktop for Business Intelligence — Maven Analytics</li>
+      </ul>
     </section>
 
     <!-- O MNIE: na dole jako rozdziały/sekcje -->

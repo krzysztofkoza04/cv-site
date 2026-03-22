@@ -14,9 +14,6 @@
       <nav class="nav">
         <a class="nav-link" href="index.html">Strona główna</a>
         <a class="nav-link active" href="projects.html">Projekty</a>
-        <a class="nav-link disabled" href="#" aria-disabled="true" title="Wkrótce">
-          Kontakt (wkrótce)
-        </a>
       </nav>
     </div>
   </header>
@@ -27,67 +24,125 @@
       <p class="muted">Zestaw projektów z analizy danych, wizualizacji i pracy z danymi.</p>
     </section>
 
-    <section class="card">
-      <h2>Analiza chorób i objawów (R)</h2>
+    <div class="project-columns">
+      <div class="project-col project-left">
+        <section class="card">
+          <h2>Projekty studenckie</h2>
+          <p class="muted">Projekty realizowane w ramach studiów i zajęć akademickich.</p>
+        </section>
 
-      <p class="muted">R, analiza statystyczna, wizualizacja danych</p>
+        <section class="card">
+          <h2>Tworzenie bazy danych hubu transportowego</h2>
+          <p class="muted">Modelowanie danych, relacje, optymalizacja zapytań</p>
+          <p>
+            Akademicki projekt budowy schematu bazy danych dla hubu transportowego, wraz z modelem relacyjnym oraz standardami integralności.
+          </p>
+          <div class="links">
+            <a class="pill" href="assets/Projekt Bazy.pdf" target="_blank">Raport (PDF)</a>
+            <a class="pill" href="assets/nf3_code.ddl" target="_blank">Kod DDL</a>
+            
+            <a class="pill" href="assets/Relational_1.pdf" target="_blank">Diagram relacyjny (PDF)</a>
+          </div>
+        </section>
 
-      <p>
-        Projekt analizy danych dotyczących chorób i objawów z lat 2012–2019.
-        Obejmował eksploracyjną analizę danych, wizualizację rozkładów demograficznych,
-        struktury płci oraz analizę geograficzną liczby przypadków na świecie.
-      </p>
+        <section class="card">
+          <h2>Tworzenie aplikacji bazodanowej w Oracle APEX</h2>
+          <p class="muted">Oracle APEX, interaktywny interfejs, CRUD</p>
+          <p>
+            Projekt obejmujący budowę aplikacji bazodanowej w Oracle APEX, z formularzami, raportami i mechanizmami walidacji. Integracja z modelem danych i raportami biznesowymi.
+          </p>
+          <div class="links">
+            <a class="pill" href="assets/Projekt aplikacji bazodanowej.pdf" target="_blank">Dokumentacja APEX (PDF)</a>
+            <a class="pill" href="assets/Aplikacja_HUB_MORSKI_APEX.sql" target="_blank">Eksport APEX (SQL)</a>
+          </div>
+        </section>
 
-      <div class="links">
-        <a class="pill" href="assets/Choroby.pdf" target="_blank">
-          Raport (PDF)
-        </a>
-        <a class="pill" href="assets/R_poejkt.html" target="_blank">
-          Analiza (HTML)
-        </a>
+        <section class="card">
+          <h2>Łączenie źródeł danych (projekt akademicki)</h2>
+          <p class="muted">ETL, integracja danych, dokumentacja</p>
+          <p>
+            Projekt studentcki pokazujący proces łączenia wielu źródeł danych, transformacji i obróbki danych do analizy biznesowej. Raport opisuje kroki, narzędzia oraz wyniki.
+          </p>
+          <div class="links">
+            <a class="pill" href="assets/laczenie-zrodel-danych.pdf" download>Zobacz raport (PDF)</a>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Analiza chorób i objawów (R)</h2>
+          <p class="muted">R, analiza statystyczna, wizualizacja danych</p>
+          <p>
+            Projekt analizy danych dotyczących chorób i objawów z lat 2012–2019.
+            Obejmował eksploracyjną analizę danych, wizualizację rozkładów demograficznych,
+            struktury płci oraz analizę geograficzną liczby przypadków na świecie.
+          </p>
+          <div class="links">
+            <a class="pill" href="assets/Choroby.pdf" target="_blank">
+              Raport (PDF)
+            </a>
+            <a class="pill" href="assets/R_poejkt.html" target="_blank">
+              Analiza (HTML)
+            </a>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Analiza statystyczna w R</h2>
+          <p class="muted">R, statystyka</p>
+          <p>
+            Testy statystyczne, wizualizacje, interpretacja wyników.
+          </p>
+          <a class="pill" href="assets/statystyka-projekt (2).pdf" target="_blank">
+            Zobacz raport (PDF)
+          </a>
+        </section>
+
+        <section class="card">
+          <h2>Analiza szeregów czasowych (R)</h2>
+          <p class="muted">R, szeregi czasowe, analiza statystyczna</p>
+          <p>
+            Projekt analizy szeregów czasowych obejmujący identyfikację trendu,
+            sezonowości oraz dekompozycję danych. Celem było zrozumienie struktury
+            czasowej danych oraz interpretacja obserwowanych zmian w czasie.
+          </p>
+          <div class="links">
+            <a class="pill" href="assets/projektszeregi.html" target="_blank">Raport (HTML)</a>
+          </div>
+        </section>
       </div>
-    </section>
 
+      <div class="project-col project-right">
+        <section class="card">
+          <h2>Projekty samodzielne</h2>
+          <p class="muted">Samodzielne projekty do portfolio, które zrealizowałem niezależnie.</p>
+        </section>
 
-      <section class="card">
-        <h2>Dashboard Power BI</h2>
-        <p class="muted">Power BI, Excel</p>
-        <p>
-          Interaktywny dashboard: KPI, trendy, porównania okresów, filtry.
-        </p>
-        <a class="pill" href="assets/financials.pdf" target="_blank">
-          Zobacz raport (PDF)
-        </a>
-      </section>
+        <section class="card">
+          <h2>Analiza danych w Pythonie</h2>
+          <p class="muted">Python, pandas, matplotlib/seaborn</p>
+          <p>Projekt przetwarzania i analizy danych z czyszczeniem, agregacją oraz wizualizacją wyników w Pythonie.</p>
+          <div class="links">
+            <a class="pill" href="https://github.com/krzysztofkoza04/wages-inflation-unemployment-analysis-poland" target="_blank">Repozytorium GitHub</a>
+          </div>
+        </section>
 
-      <section class="card">
-        <h2>Analiza statystyczna w R</h2>
-        <p class="muted">R, statystyka</p>
-        <p>
-          Testy statystyczne, wizualizacje, interpretacja wyników.
-        </p>
-        <a class="pill" href="assets/statystyka-projekt (2).pdf" target="_blank">
-          Zobacz raport (PDF)
-        </a>
-      </section>
-    </section>
-    <section class="card">
-      <h2>Analiza szeregów czasowych (R)</h2>
+        <section class="card">
+          <h2>Hurtownia danych i wizualizacja Power BI</h2>
+          <p class="muted">ETL, hurtownia danych, Power BI</p>
+          <p>Projekt wdrożenia hurtowni danych dla e-commerce oraz przygotowania dashboardów w Power BI do monitoringu sprzedaży i wydajności.</p>
+          <div class="links">
+            <a class="pill" href="https://github.com/krzysztofkoza04/ecommerce-data-warehouse-project" target="_blank">Repozytorium GitHub</a>
+          </div>
+        </section>
 
-      <p class="muted">R, szeregi czasowe, analiza statystyczna</p>
-
-      <p>
-        Projekt analizy szeregów czasowych obejmujący identyfikację trendu,
-        sezonowości oraz dekompozycję danych. Celem było zrozumienie struktury
-        czasowej danych oraz interpretacja obserwowanych zmian w czasie.
-      </p>
-
-      <div class="links">
-        <a class="pill" href="assets/projektszeregi.html" target="_blank">
-          Analiza (HTML)
-        </a>
+        <section class="card">
+          <h2>Dashboard Power BI</h2>
+          <p class="muted">Power BI, Excel</p>
+          <p>Interaktywny dashboard: KPI, trendy, porównania okresów, filtry.</p>
+          <a class="pill" href="assets/financials.pdf" target="_blank">Zobacz raport (PDF)</a>
+        </section>
       </div>
-    </section>
+    </div>
 
 
     <footer class="footer muted">
